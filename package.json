@@ -1,0 +1,22 @@
+{
+  "name": "textlint-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tobe775/textlint-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tobe775/textlint-test/issues"
+  },
+  "devDependencies": {
+    "textlint": "^12.1.0",
+    "textlint-rule-preset-japanese": "^7.0.0"
+  }
+}

@@ -13,15 +13,15 @@ services:
     ports:
       - "8002:8080"
     volumes:
-      - ./api/openapi.yaml:/openapi.yaml
+      - ./api/openapi.yml:/openapi.yml
     environment:
-      SWAGGER_JSON: /openapi.yaml
+      SWAGGER_JSON: /openapi.yml
 
   swagger-api:
     image: stoplight/prism:3
     container_name: "swagger-api"
     ports:
       - "8003:4010"
-    command: mock -h 0.0.0.0 /openapi.yaml
+    command: mock -h 0.0.0.0 /openapi.yml
     volumes:
-      - ./api/openapi.yaml:/openapi.yaml
+      - ./api/openapi.yml:/openapi.yml

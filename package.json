@@ -18,5 +18,8 @@
   "devDependencies": {
     "textlint": "^12.1.0",
     "textlint-rule-preset-japanese": "^7.0.0"
+  },
+  "dependencies": {
+    "textlint-plugin-yaml": "github:takemikami/textlint-plugin-yaml"
   }
 }

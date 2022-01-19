@@ -1,5 +1,6 @@
 up:
 	docker-compose up -d
+
 textlint:
 	cat text-check.txt
 	echo "run textlint"

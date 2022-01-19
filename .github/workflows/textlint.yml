@@ -5,8 +5,8 @@ jobs:
   test:
     strategy:
       matrix:
-        os: [ ubuntu-latest, windows-latest ]
-        node-version: [ 10, 12, 14 ]
+        os: [ ubuntu-latest ]
+        node-version: [ 14 ]
     name: Test(Node ${{ matrix.node }} on ${{ matrix.os }})
     runs-on: ${{ matrix.os }}
     steps:
@@ -16,3 +16,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install
         run: npm install
+      - name: textlint
+        run: make textlint
